@@ -1,0 +1,85 @@
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background-image: url("../images/pexels-jakubzerdzicki-19701594.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+
+}
+
+header{
+    background:#0077cc;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.menu{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    padding:20px;
+}
+
+.menu button{
+    background:#0077cc;
+    color:white;
+    border:none;
+    padding:15px 25px;
+    cursor:pointer;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.menu button:hover{
+    background:#005fa3;
+}
+
+.section{
+    display:none;
+    width:75%;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    margin-bottom:30px;
+}
+
+.section h2{
+    color:#0077cc;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    box-sizing:border-box;
+}
+
+.section button{
+    background:green;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+    border-radius:6px;
+}
+
+.section button:hover{
+    background:darkgreen;
+}
+
+#visitorPass,
+#waterResult,
+#wasteResult,
+#energyResult,
+#rentResult{
+    margin-top:15px;
+    background:#f1f1f1;
+    padding:15px;
+    border-radius:8px;
+}

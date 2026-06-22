@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart City Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🏙 Smart Home Management System</h1>
+</header>
+
+<div class="menu">
+
+    <button onclick="showSection('water')">
+        💧 Water Monitoring
+    </button>
+
+    <button onclick="showSection('waste')">
+        🗑 Waste Management
+    </button>
+
+    <button onclick="showSection('visitor')">
+        👥 Visitor Management
+    </button>
+
+    <button onclick="showSection('energy')">
+        ⚡ Energy Monitoring
+    </button>
+
+    <button onclick="showSection('rent')">
+        🏠 Rent Reminder
+    </button>
+
+</div>
+
+<!-- WATER -->
+
+<div id="water" class="section">
+
+    <h2>💧 Smart Water Monitoring</h2>
+
+    <input type="number" id="capacity"
+        placeholder="Tank Capacity (L)">
+
+    <input type="number" id="currentLevel"
+        placeholder="Current Water Level (L)">
+
+    <input type="number" id="threshold"
+        placeholder="Low Water Threshold (%)"
+        value="20">
+
+    <button onclick="monitorWater()">
+        Check Water Status
+    </button>
+
+    <div id="waterResult"></div>
+
+</div>
+
+<!-- WASTE -->
+
+<div id="waste" class="section">
+
+    <h2>🗑 Smart Waste Management</h2>
+
+    <input type="number"
+        id="binLevel"
+        placeholder="Bin Fill Percentage">
+
+    <button onclick="checkBin()">
+        Check Bin
+    </button>
+
+    <div id="wasteResult"></div>
+
+</div>
+
+<!-- VISITOR -->
+
+<div id="visitor" class="section">
+
+    <h2>👥 Smart Visitor Management</h2>
+
+    <input type="text"
+        id="visitorName"
+        placeholder="Visitor Name">
+
+    <input type="text"
+        id="visitorPurpose"
+        placeholder="Purpose of Visit">
+
+    <button onclick="registerVisitor()">
+        Generate Pass
+    </button>
+
+    <div id="visitorPass"></div>
+
+</div>
+
+<!-- ENERGY -->
+
+<div id="energy" class="section">
+
+    <h2>⚡ Smart Energy Monitoring</h2>
+
+    <input type="number"
+        id="energyHours"
+        placeholder="Air Conditioner Hours Used">
+
+    <button onclick="calculateEnergy()">
+        Calculate Energy
+    </button>
+
+    <div id="energyResult"></div>
+
+</div>
+
+<!-- RENT -->
+
+<div id="rent" class="section">
+
+    <h2>🏠 Smart Rent Reminder</h2>
+
+    <input type="text"
+        id="tenantName"
+        placeholder="Tenant Name">
+
+    <input type="date"
+        id="dueDate">
+
+    <button onclick="checkRent()">
+        Check Rent Status
+    </button>
+
+    <div id="rentResult"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
